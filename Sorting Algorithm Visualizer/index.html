@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <br />
+    <p class="header">Bubble Sort</p>
+
+    <div id="array"></div>
+    <br />
+    <div class="user-input">
+      <label for="num" class="label-input">Lenght of Array:</label>
+      <input type="number" name="num" min="10" maw="50" id="num-input" />
+
+      <input
+        type="button"
+        onclick="allFunc()"
+        class="submit-btn"
+        value="Create"
+      />
+    </div>
+    <br />
+    <div class="user-input">
+      <label for="volume" class="label-input">Speed: </label
+      ><label for="volume" id="speed-label" class="label-input"></label>
+      <input type="range" id="speed" name="volume" min="0" max="100" />
+      <span id="time" class="span-input"
+        >Time it took to compute this algorithm:
+      </span>
+      <!-- <label for="cars">Choose an algorithm:</label>
+
+      <select name="algorithms" id="algorithms">
+        <option value="bubble-sort">Bubble Sort</option>
+        <option value="merge-sort">Merge Sort</option>
+      </select> -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
